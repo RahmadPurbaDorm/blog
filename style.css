@@ -50,9 +50,8 @@ header nav a:hover {
 }
 
 .blog-post img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 300px;  /* Tentukan lebar gambar */
+    height: auto;  /* Tinggi menyesuaikan proporsional */
 }
 
 .blog-post button {
