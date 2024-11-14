@@ -49,11 +49,6 @@ header nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.blog-post img {
-    width: 15px;  /* Tentukan lebar gambar */
-    height: 15px;  /* Tinggi menyesuaikan proporsional */
-}
-
 .blog-post button {
     background-color: #007bff;
     color: white;
