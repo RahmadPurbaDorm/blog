@@ -1,71 +1,85 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Ulasan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Ulasan kost</h1>
-    </header>
-
-    <section id="reviews">
-        <h2>Ulasan Pengguna</h2>
-        <div id="review-list">
-            <!-- Ulasan akan ditampilkan di sini -->
-        </div>
-    </section>
-
-    <section id="add-review">
-        <h2>Tambahkan Ulasan Anda</h2>
-        <form id="review-form">
-            <label for="name">Nama Anda:</label>
-            <input type="text" id="name" required><br><br>
-
-            <label for="review">Ulasan:</label><br>
-            <textarea id="review" rows="4" cols="50" required></textarea><br><br>
-
-            <button type="submit">Kirim Ulasan</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Ulasan Produk</p>
-    </footer>
-
-    <script>
-        // script.js
-document.addEventListener("DOMContentLoaded", function() {
-    const reviewForm = document.getElementById("review-form");
-    const reviewList = document.getElementById("review-list");
-
-    reviewForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const review = document.getElementById("review").value;
-
-        if (name && review) {
-            const newReview = document.createElement("div");
-            newReview.classList.add("review");
-
-            newReview.innerHTML = `
-                <strong>${name}</strong>
-                <p>${review}</p>
-            `;
-
-            reviewList.appendChild(newReview);
-
-            // Clear the form inputs
-            document.getElementById("name").value = "";
-            document.getElementById("review").value = "";
-        } else {
-            alert("Nama dan ulasan harus diisi.");
+    <title>Blog Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    });
-});
-    </script>
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .post {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .post-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .post-date {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .post-content {
+            margin-top: 10px;
+        }
+
+        .comment-section {
+            margin-top: 20px;
+        }
+
+        .comment {
+            margin-bottom: 10px;
+            border-left: 2px solid #ccc;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Blog Saya</h1>
+
+        <!-- Postingan Blog -->
+        <div class="post">
+            <h2 class="post-title">Judul Postingan Pertama</h2>
+            <p class="post-date">Diposting pada 14 November 2024</p>
+            <div class="post-content">
+                <p>Cari Kost Murah Dekat Kota? Ini Rekomendasi yang Nyaman dan Terjangkau!” </p>
+            </div>
+        </div>
+
+        <!-- Komentar -->
+        <div class="comment-section">
+            <h3>Komentar</h3>
+            <div class="comment">
+                <p><strong>Pengguna 1:</strong> Terima kasih atas informasinya!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Pengguna 2:</strong> Sangat menarik, saya ingin membaca lebih banyak konten seperti ini.</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
