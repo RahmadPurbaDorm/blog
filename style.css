@@ -1,14 +1,14 @@
 /* style.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #0303e6;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #39ffff;
+    color: rgb(13, 158, 163);
     text-align: center;
     padding: 1rem;
 }
@@ -22,10 +22,10 @@ section {
 }
 
 #review-list {
-    background-color: #fff;
+    background-color: #0e0d0d;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(27, 27, 27, 0.1);
 }
 
 .review {
