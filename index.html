@@ -35,6 +35,37 @@
         <p>&copy; 2024 Ulasan Produk</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const reviewForm = document.getElementById("review-form");
+    const reviewList = document.getElementById("review-list");
+
+    reviewForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const review = document.getElementById("review").value;
+
+        if (name && review) {
+            const newReview = document.createElement("div");
+            newReview.classList.add("review");
+
+            newReview.innerHTML = `
+                <strong>${name}</strong>
+                <p>${review}</p>
+            `;
+
+            reviewList.appendChild(newReview);
+
+            // Clear the form inputs
+            document.getElementById("name").value = "";
+            document.getElementById("review").value = "";
+        } else {
+            alert("Nama dan ulasan harus diisi.");
+        }
+    });
+});
+    </script>
 </body>
 </html>
