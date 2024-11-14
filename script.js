@@ -1,0 +1,1 @@
+alert("Fitur 'Baca Selengkapnya' belum tersedia.");
