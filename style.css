@@ -61,3 +61,10 @@ header nav a:hover {
 .blog-container {
     grid-template-columns: 1fr; /* Menampilkan satu kolom pada layar kecil */
 }
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
