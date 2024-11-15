@@ -94,7 +94,7 @@ header nav a:hover {
     background-color: #333;
     color: #fff;
     padding: 15px 20px;
-    text-align:center;
+    justify-content: center;
 }
 
 /* Media Queries untuk Responsif */
