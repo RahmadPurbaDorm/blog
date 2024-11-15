@@ -68,3 +68,26 @@ header nav a:hover {
     padding: 15px 20px;
     text-align: center;
 }
+
+/* Media Query untuk Tablet dan Mobile */
+@media (max-width: 1024px) {
+    .blog-post {
+        width: calc(50% - 20px); /* 2 kolom pada layar tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        width: 100%; /* 1 kolom pada layar mobile */
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+}
