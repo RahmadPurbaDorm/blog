@@ -1,3 +1,4 @@
+/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +8,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: #fff;
@@ -19,23 +19,32 @@ header {
     text-align: center;
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Memungkinkan item menu ditampilkan secara vertikal di perangkat kecil */
+}
+
 header nav a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+    padding: 5px 10px;
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
+/* Konten Utama */
 .main {
     padding: 20px;
 }
 
+/* Blog container dengan grid */
 .blog-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Menyesuaikan jumlah kolom berdasarkan lebar layar */
     gap: 20px;
     padding: 20px;
 }
@@ -49,6 +58,23 @@ header nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.blog-post img {
+    width: 100%;
+    height: auto; /* Agar gambar responsif */
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Tombol */
 .blog-post button {
     background-color: #007bff;
     color: white;
@@ -56,15 +82,4 @@ header nav a:hover {
     padding: 10px 15px;
     margin-top: 10px;
     cursor: pointer;
-    border-radius: 5px;
-}
-.blog-container {
-    grid-template-columns: 1fr; /* Menampilkan satu kolom pada layar kecil */
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 20px;
-    text-align: center;
-}
+    border-ra
